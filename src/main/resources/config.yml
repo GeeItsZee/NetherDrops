@@ -1,0 +1,61 @@
+# Nether Drops Configuration File
+
+# Information on the items that can be dropped by this plugin
+Items:
+
+  Giant's Coin:
+    # Probability from 0.0000 (no chance) to 1.0000 (every chance)
+    probability: 0.5
+    # Random amount to drop between 1 to max-amount
+    max-amount: 5
+    item-stack:
+      ==: org.bukkit.inventory.ItemStack
+      type: WATCH
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - If found, return within
+        - the Giant's Skull.
+
+  Brick of the Shattered Wall:
+    # Probability from 0.000 (no chance) to 1.000 (every chance)
+    probability: 0.5
+    # Random amount to drop between 1 to max-amount
+    max-amount: 1
+    item-stack:
+      ==: org.bukkit.inventory.ItemStack
+      type: NETHER_BRICK_ITEM
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - Brick of the Shattered Wall
+        - Help repair the wall that
+        - the giant's right hand broke.
+
+  Unmelted Snowball:
+    # Probability from 0.000 (no chance) to 1.000 (every chance)
+    probability: 0.5
+    # Random amount to drop between 1 to max-amount
+    max-amount: 1
+    item-stack:
+      ==: org.bukkit.inventory.ItemStack
+      type: SNOW_BALL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - Strange that it hasn't melted down here
+        - I should bring this to the magic painting
+        - in the Ice Castle.
+
+# Areas where items cannot drop
+NoDropAreas:
+
+  # Name of the rectangular prism area
+  Spawn:
+    # Must contain 3 values (x, y, z) coordinates
+    First: [1, 1, 1]
+    # Must contain 3 values (x, y, z) coordinates
+    Second: [2, 2, 2]

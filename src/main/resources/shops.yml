@@ -1,0 +1,28 @@
+# Nether Drops Shop File
+
+# Name of the trading shop
+ShopName:
+  # Currency item that will be traded at this shop
+  currency-item-name: Giant's Coin
+  # Amount of currency required for the trade
+  currency-amount: 2
+  # Possible items that can be given
+  possible-items:
+    0:
+      chance-value: 1
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: STONE
+        amount: 1
+    1:
+      chance-value: 1
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: GRASS
+        amount: 1
+    2:
+      chance-value: 1
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND
+        amount: 1

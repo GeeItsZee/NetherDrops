@@ -1,0 +1,9 @@
+name: NetherDrops
+main: com.yahoo.tracebachi.NetherDrops.NetherDrops
+author: Trace Bachi (tracebachi@yahoo.com, BigBossZee)
+version: 1.0
+commands:
+  dropsreload:
+    description: Reloads NetherDrops config.
+  dropgive:
+    description: Gives custom NetherDrops items;
